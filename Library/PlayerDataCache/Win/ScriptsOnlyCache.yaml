@@ -3,10 +3,14 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - CameraScript
     - PlayerScript
+    - enemy_move
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.Tilemap.Editor.dll:
+    - UnityEditor.Tilemaps.GridBrush
     - UnityEditor.Tilemaps.GridPaintingState
+    - UnityEditor.Tilemaps.GridPaletteBrushes
+    - UnityEditor.Tilemaps.GridPalettes
     - UnityEditor.Tilemaps.SceneViewGridManager
     - UnityEditor.Tilemaps.TileDragAndDropManager
     Unity.Rider.Editor.dll:
@@ -14,8 +18,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - TestRunner.Callbacks.WindowResultUpdaterDataHolder
@@ -50,7 +56,17 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 62
       Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
     - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
@@ -72,6 +88,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 14498}
     - Class: 114
       Script: {instanceID: 15030}
+    - Class: 114
+      Script: {instanceID: 28370}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -197,7 +215,7 @@ ScriptsOnlyBuild:
     className: TMP_InputField
   - hash:
       serializedVersion: 2
-      Hash: ba8885765ad8fe055d2176fbae6efcd9
+      Hash: 4fe95d4027cd19c5b74096b2b4df21db
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerScript
@@ -485,7 +503,7 @@ ScriptsOnlyBuild:
     className: BeforeAfterTestCommandState
   - hash:
       serializedVersion: 2
-      Hash: 66bca5cc6a18c5298ec75235e56a84d6
+      Hash: f6d1923926179cb9c6c1d3d86e0cd7bd
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CameraScript
@@ -597,8 +615,14 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 2ab43212ec487a1e3ad0403dbd6c5bea
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: enemy_move
   platform: 5
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: C:/Users/mikae/Desktop/Unity Projects/Tutorial 2/Tutorial 2/Gensler_Mikaeyla_DIG3480_Tutorial2/Tutorial
+  playerPath: C:/Users/mikae/Desktop/Unity Projects/Challenge 2/Finished Build/Tutorial
     2.exe
