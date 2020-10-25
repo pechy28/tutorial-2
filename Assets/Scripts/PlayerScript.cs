@@ -76,6 +76,11 @@ public class PlayerScript : MonoBehaviour
                 rd2d.AddForce(new Vector2 (-2, 0),ForceMode2D.Impulse);
                 anim.SetInteger("State", 1);
             }
+        
+        if (Input.GetKey("escape"))
+        {
+            Application.Quit();
+        }
 
     }
     void Flip()
@@ -129,15 +134,5 @@ public class PlayerScript : MonoBehaviour
             isGrounded = true;
         }
     }
-
-    private void OnCollisionStay2D(Collision2D collision)
-    {
-
-        if (Input.GetKey("escape"))
-        {
-            Application.Quit();
-        }
-    }
-    
 
 }
